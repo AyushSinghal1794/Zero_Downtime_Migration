@@ -1,0 +1,22 @@
+{
+    "name": "zero-downtime-migration-demo",
+    "version": "1.0.0",
+    "description": "Demo: zero-downtime migration (dual-write + RabbitMQ sync + backfill) using Node.js + Express + SQLite",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js",
+        "consumer": "node consumer.js",
+        "backfill": "node backfill.js",
+        "migrate:init": "node migrate_init.js"
+    },
+    "keywords": [],
+    "author": "You",
+    "license": "MIT",
+    "dependencies": {
+        "amqplib": "^0.10.9",
+        "dotenv": "^16.6.1",
+        "express": "^4.21.2",
+        "pg": "^8.16.3",
+        "uuid": "^9.0.1"
+    }
+}
